@@ -1,4 +1,4 @@
-module gitlab.skig.tech/zero-core/zerodcron
+module github.com/zhangbao138208/zerodcron
 
 replace google.golang.org/grpc => google.golang.org/grpc v1.54.0
 
