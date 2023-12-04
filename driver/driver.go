@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/go-redis/redis/v8"
-	clientv3 "go.etcd.io/etcd/client/v3"
+	//clientv3 "go.etcd.io/etcd/client/v3"
 )
 
 // There is only one driver for one dcron.
@@ -28,9 +28,9 @@ func NewRedisDriver(redisClient *redis.Client) DriverV2 {
 	return newRedisDriver(redisClient)
 }
 
-func NewEtcdDriver(etcdCli *clientv3.Client) DriverV2 {
-	return newEtcdDriver(etcdCli)
-}
+//func NewEtcdDriver(etcdCli *clientv3.Client) DriverV2 {
+//	return newEtcdDriver(etcdCli)
+//}
 
 func NewRedisZSetDriver(redisClient *redis.Client) DriverV2 {
 	return newRedisZSetDriver(redisClient)
